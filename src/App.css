@@ -1,0 +1,111 @@
+.App {
+  overflow: auto;
+}
+
+.App-main {
+  background: url("./bg.png") no-repeat #01182b;
+  background-size: cover;
+  min-height: 100vh;
+  /* padding: 10px; */
+  display: flex;
+}
+
+.main-container {
+  flex: 1;
+}
+
+/*-------Nav section------*/
+
+.nav-section {
+  color: #eee;
+  flex: 1;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-brand {
+  color: #fff;
+  font-size: 2em;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+.nav-brand:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.nav-tabs {
+  flex: 1;
+  justify-content: center;
+  border: none;
+}
+
+.nav-link {
+  color: #eee;
+  border: none !important;
+  padding: 10px 0;
+  text-align: end;
+}
+
+.nav-tabs .nav-link.active {
+  color: yellow;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  text-align: end;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: yellow;
+  border: none;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  color: #eee;
+  padding-left: 4px;
+  font-size: 1.7em;
+}
+
+.social-links a:hover {
+  color: #eee;
+}
+
+/*-----contect section-----*/
+
+.child-tab-content {
+  flex: 9;
+  color: #eee;
+}
+
+.child-tab-content > .active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  color: #eee;
+}
+
+.child-tab {
+  height: 0;
+  width: 0;
+  color: transparent;
+}
+/*-----default style------*/
+
+.flow-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-row {
+  display: flex;
+}
