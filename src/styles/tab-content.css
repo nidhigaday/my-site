@@ -1,0 +1,21 @@
+.child-tab-content {
+  flex: 9;
+  color: #eee;
+}
+
+.child-tab-content > .active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  color: #eee;
+}
+
+.child-tab {
+  height: 0;
+  width: 0;
+  color: transparent;
+}

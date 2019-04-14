@@ -1,0 +1,26 @@
+.app {
+  overflow: auto;
+}
+
+.app-main {
+  background: url("../utils/bg.png") no-repeat #01182b;
+  background-size: cover;
+  min-height: 100vh;
+  /* padding: 10px; */
+  display: flex;
+}
+
+.main-container {
+  flex: 1;
+}
+
+/*-----default style------*/
+
+.flow-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-row {
+  display: flex;
+}
