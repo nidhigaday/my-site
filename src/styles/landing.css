@@ -1,0 +1,40 @@
+.landing.active {
+  background-color: #eee;
+  color: #01182b;
+}
+
+.landing.active > .greetings {
+  position: relative;
+  text-align: center;
+
+  -webkit-animation-name: greeting; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: greeting;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes greeting {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes greeting {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.greetings h2 {
+  font-size: 3em;
+}
+
+.greetings p {
+  font-size: 1.5em;
+}

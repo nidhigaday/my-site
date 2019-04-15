@@ -1,0 +1,26 @@
+.about {
+  flex: 1;
+  width: 100%;
+}
+
+.about > * {
+  padding: 5%;
+}
+
+.image-pane {
+  background-color: #eee;
+  flex: 2;
+  color: #01182b;
+}
+
+.info-pane {
+  flex: 3;
+}
+
+.info-pane > * {
+  padding-bottom: 5%;
+}
+
+.info-pane p {
+  font-size: 1.5em;
+}

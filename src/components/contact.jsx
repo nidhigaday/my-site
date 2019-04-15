@@ -4,10 +4,18 @@ import TabPane from "react-bootstrap/TabPane";
 
 function ContactPage() {
   return (
-    <TabPane eventKey="contact" bsPrefix="child-tab flow-column">
+    <div id="contact" className="child-tab flow-column">
       Contact me on my email!
-    </TabPane>
+    </div>
   );
 }
+
+// function ContactPage() {
+//   return (
+//     <TabPane eventKey="contact" bsPrefix="child-tab flow-column">
+//       Contact me on my email!
+//     </TabPane>
+//   );
+// }
 
 export default ContactPage;

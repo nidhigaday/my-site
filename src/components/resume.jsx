@@ -4,10 +4,18 @@ import TabPane from "react-bootstrap/TabPane";
 
 function ResumePage() {
   return (
-    <TabPane eventKey="resume" bsPrefix="child-tab flow-column">
+    <div id="resume" className="child-tab flow-column">
       Resume, oh this is my resume!
-    </TabPane>
+    </div>
   );
 }
+
+// function ResumePage() {
+//   return (
+//     <TabPane eventKey="resume" bsPrefix="child-tab flow-column">
+//       Resume, oh this is my resume!
+//     </TabPane>
+//   );
+// }
 
 export default ResumePage;

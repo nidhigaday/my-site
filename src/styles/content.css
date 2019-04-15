@@ -1,6 +1,7 @@
 .child-tab-content {
-  flex: 9;
+  flex: 6;
   color: #eee;
+  /* overflow-y: auto; */
 }
 
 .child-tab-content > .active {
