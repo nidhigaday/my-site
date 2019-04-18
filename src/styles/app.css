@@ -11,7 +11,7 @@
 }
 
 .main-container {
-  flex: 1;
+  height: 100vh;
 }
 
 /*-----default style------*/
@@ -19,8 +19,10 @@
 .flow-column {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .flow-row {
   display: flex;
+  flex: 1;
 }

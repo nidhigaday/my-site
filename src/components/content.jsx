@@ -10,7 +10,7 @@ import ContactPage from "./contact";
 
 function TabContentSection() {
   return (
-    <div className="child-tab-content flow-row">
+    <div className="content flow-column">
       <LandingPage />
       <AboutPage />
       <ResumePage />

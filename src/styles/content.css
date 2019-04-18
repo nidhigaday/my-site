@@ -1,22 +1,12 @@
-.child-tab-content {
-  flex: 6;
+.content {
+  /* flex: 6; */
   color: #eee;
-  /* overflow-y: auto; */
-}
-
-.child-tab-content > .active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex: 1;
-  height: 100%;
-  color: #eee;
+  overflow-y: auto;
+  width: 80vw;
 }
 
 .child-tab {
-  height: 0;
+  /* height: 0;
   width: 0;
-  color: transparent;
+  color: transparent; */
 }

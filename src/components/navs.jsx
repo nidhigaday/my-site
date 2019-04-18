@@ -7,29 +7,26 @@ import "../styles/navs.css";
 
 function NavigationSection() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="home" className="nav-brand">
-            {" "}
-            NG
-          </a>
-        </li>
+    <nav className="nav-section">
+      <div className="nav-brand flow-column">
+        <a href="#home">NG</a>
+      </div>
+      <ul className="nav-list flow-column">
         {Navs.map(({ key, label }) => (
           <li>
-            <a href={key} className="nav-link">
+            <a href={`#${key}`} className="nav-link">
               {label}
             </a>
           </li>
         ))}
-        <li className="social-links">
-          {socialLinks.map(({ link, icon }) => (
-            <a href={link} target="blank">
-              {icon}
-            </a>
-          ))}
-        </li>
       </ul>
+      <div className="social-links flow-row">
+        {socialLinks.map(({ link, icon }) => (
+          <a href={`#${link}`} target="blank">
+            {icon}
+          </a>
+        ))}
+      </div>
     </nav>
   );
 }

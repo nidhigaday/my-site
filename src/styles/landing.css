@@ -1,9 +1,9 @@
-.landing.active {
+.landing {
   background-color: #eee;
   color: #01182b;
 }
 
-.landing.active > .greetings {
+.landing > .greetings {
   position: relative;
   text-align: center;
 
