@@ -6,56 +6,53 @@ function BuildingBoxes() {
   return (
     <div className="building-boxes column-center">
       <div className="base-row flow-row">
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
+        {[...Array(7)].map((_, i) => (
+          <div className="base-box transparent" />
+        ))}
         <div className="base-box box-1" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
+        {[...Array(3)].map((_, i) => (
+          <div className="base-box transparent" />
+        ))}
       </div>
       <div className="base-row flow-row">
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
+        {[...Array(2)].map((_, i) => (
+          <div className="base-box transparent" />
+        ))}
         <div className="base-box box-2" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
+        {[...Array(3)].map((_, i) => (
+          <div className="base-box transparent" />
+        ))}
+
         <div className="base-box box-5" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box transparent" />
-        <div className="base-box transparent" />
+        {[...Array(2)].map((_, i) => (
+          <div className="base-box" />
+        ))}
+
+        {[...Array(2)].map((_, i) => (
+          <div className="base-box transparent" />
+        ))}
       </div>
       <div className="base-row flow-row">
         <div className="base-box transparent" />
-        <div className="base-box" />
-        <div className="base-box" />
+        {[...Array(2)].map((_, i) => (
+          <div className="base-box" />
+        ))}
+
         <div className="base-box box-6" />
         <div className="base-box transparent" />
         <div className="base-box box-4" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
+        {[...Array(3)].map((_, i) => (
+          <div className="base-box" />
+        ))}
+
         <div className="base-box box-3" />
         <div className="base-box transparent" />
       </div>
       <div className="base-row flow-row">
         <div className="base-box box-3" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
-        <div className="base-box" />
+        {[...Array(10)].map((_, i) => (
+          <div className="base-box" />
+        ))}
       </div>
     </div>
   );
