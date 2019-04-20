@@ -1,0 +1,16 @@
+.child-tab-content {
+  color: #eee;
+  width: 80vw;
+}
+
+.child-tab.active {
+  flex: 1;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: initial;
+}
+
+.child-tab {
+  display: none;
+}

@@ -1,5 +1,13 @@
 *,
-body {
+body,
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS",
@@ -9,7 +17,21 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  font-weight: 300;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: #eee;
+}
+
+a:hover {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
 }

@@ -1,17 +1,15 @@
 .app {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .app-main {
   background: url("../utils/bg.png") no-repeat #01182b;
   background-size: cover;
   min-height: 100vh;
-  /* padding: 10px; */
-  display: flex;
 }
 
 .main-container {
-  flex: 1;
+  height: 100vh;
 }
 
 /*-----default style------*/
@@ -23,4 +21,16 @@
 
 .flow-row {
   display: flex;
+}
+
+.row-center {
+  justify-content: center;
+  display: flex;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

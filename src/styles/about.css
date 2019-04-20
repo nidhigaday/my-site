@@ -1,0 +1,53 @@
+.about {
+  height: inherit;
+}
+
+.about > * {
+  padding: 5%;
+  height: inherit;
+}
+
+.image-pane {
+  flex: 2;
+  background-color: #eee;
+}
+
+.about-image {
+  color: #01182b;
+  background: url("../utils/about.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.info-pane {
+  flex: 3;
+  color: #eee;
+}
+
+.info-pane > * {
+  padding-bottom: 5%;
+  font-weight: 300;
+}
+
+.info-pane p {
+  font-size: 1.3em;
+}
+
+.education {
+  padding: 20px 0 0 0;
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+  position: relative;
+}
+
+.education p {
+  font-size: 1em;
+}
+
+.education > * {
+  padding-bottom: 1em;
+}
+
+.edu-inner {
+  padding-bottom: 1em;
+}
