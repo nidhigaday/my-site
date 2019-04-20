@@ -1,0 +1,71 @@
+.building-boxes {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.base-row {
+  height: 55px;
+}
+
+.base-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #01182b;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.transparent {
+  border: 2px solid transparent;
+}
+
+.box-1 {
+  position: relative;
+  -webkit-animation: falling-box 4s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 4s forwards;
+}
+.box-2 {
+  position: relative;
+  -webkit-animation: falling-box 2s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 2s forwards;
+}
+.box-3 {
+  position: relative;
+  -webkit-animation: falling-box 3s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 3s forwards;
+}
+.box-4 {
+  position: relative;
+
+  -webkit-animation: falling-box 4s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 4s forwards;
+}
+.box-5 {
+  position: relative;
+  -webkit-animation: falling-box 2s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 2s forwards;
+}
+
+.box-6 {
+  position: relative;
+  -webkit-animation: falling-box 2s forwards; /* Safari 4.0 - 8.0 */
+  animation: falling-box 2s forwards;
+}
+
+@-webkit-keyframes falling-box {
+  from {
+    top: -55px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes falling-box {
+  from {
+    top: -55px;
+  }
+  to {
+    top: 0;
+  }
+}

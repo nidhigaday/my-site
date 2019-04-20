@@ -18,9 +18,9 @@ function NavigationSection() {
           </Nav.Link>
         ))}
       </Nav.Item>
-      <Nav.Item bsPrefix="social-links">
+      <Nav.Item bsPrefix="social-links row-center">
         {socialLinks.map(({ link, icon }) => (
-          <a href={link} target="_blank">
+          <a href={link} target="blank">
             {icon}
           </a>
         ))}

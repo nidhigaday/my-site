@@ -1,0 +1,40 @@
+.landing {
+  background-color: #eee;
+  color: #01182b;
+  height: inherit;
+}
+
+.greetings {
+  flex: 1;
+  position: relative;
+  white-space: nowrap;
+
+  -webkit-animation: greeting 4s forwards; /* Safari 4.0 - 8.0 */
+  animation: greeting 4s forwards;
+}
+
+@-webkit-keyframes greeting {
+  from {
+    bottom: -55px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes greeting {
+  from {
+    bottom: -55px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.greetings h2 {
+  font-size: 3em;
+}
+
+.greetings p {
+  font-size: 1.5em;
+}
