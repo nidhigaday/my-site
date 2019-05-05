@@ -1,0 +1,134 @@
+.animated-background {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.wrapper {
+  height: inherit;
+  z-index: 99;
+  padding: 12% 10% 5%;
+  position: absolute;
+  width: 100%;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@for $i from 1 through 120 {
+  @keyframes star-animation-#{$i} {
+    100% {
+      transform: translate3d(
+        (random(100) * 1vw),
+        (random(100) * 1vh),
+        (random(100) * 1px)
+      );
+    }
+  }
+
+  .star:nth-child(#{$i}) {
+    animation: star-animation-#{$i} 40s infinite;
+    $size: random(3) + px;
+    opacity: random(100) / 100;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * 0.2s;
+    transform: translate3d(
+      (random(100) * 1vw),
+      (random(100) * 1vh),
+      (random(100) * 1px)
+    );
+    background: #fff;
+  }
+}
+
+.logo {
+  color: #eeeff1;
+  display: flex;
+  align-items: center;
+  overflow-x: visible;
+}
+
+.logo > * {
+  font-family: cursive;
+  margin-right: 16px;
+}
+
+.initials {
+  font-size: 30px;
+  border: 1px solid #eeeff1;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover .initials {
+  color: #01243a;
+  background: #eeeff1;
+}
+
+.fullname {
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.logo:hover .fullname {
+  opacity: 1;
+}
+
+.navs {
+  position: relative;
+  top: 15%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  // colo r: #a9a9a9;
+  color: #6e767d;
+
+  &__link {
+    align-items: center;
+    padding: 8px;
+    display: flex;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &.active {
+      color: #fff;
+    }
+
+    & span {
+      padding-left: 6px;
+    }
+  }
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  padding-left: 150px;
+  color: #a9a9a9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.nav-section {
+  position: absolute;
+  top: 10vh;
+  left: 10%;
+  width: 150px;
+  height: 80vh;
+  z-index: 9;
+}
+
+.content > * {
+  height: 100%;
+  border-bottom: 1px solid #fff;
+}
